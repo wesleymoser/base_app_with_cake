@@ -10,7 +10,7 @@
 			<?php if ($obj[$model]["{$modelLow}_count"] > 0): ?>
 				<?php echo $html->link("Reorder children", array("action" => "reorder", $obj[$model]["id"])); ?>
 			<?php endif ?>
-			<?php echo $html->link("New children", array("action" => "add", $obj[$model]["id"])); ?>
+			<?php //echo $html->link("New children", array("action" => "add", $obj[$model]["id"])); ?>
 			<?php echo $html->link("Edit", array("action" => "edit", $obj[$model]["id"])); ?>
 			<?php echo $html->link("Destroy", array("action" => "destroy", $obj[$model]["id"]), null, "Are you sure?"); ?>
 		</div>

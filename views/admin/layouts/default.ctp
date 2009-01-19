@@ -30,7 +30,7 @@
 	<?php echo $this->element("../admin/layouts/_info"); ?>
 <?php endif; ?>
 
-<h1 id="name_of_cms">Marcio Trindade <sup>CMS</sup></h1>
+<h1 id="name_of_cms"><?= Configure::read('Project.name') ?> <sup>CMS</sup></h1>
 
 <?php if($session->check("user")): ?>
 	<?php echo $this->element("../admin/layouts/_menu"); ?>
@@ -41,7 +41,7 @@
 	<?php echo $content_for_layout; ?>
 </div>
 
-<div id="footer">Created by <?php echo $html->link("Marcio Trindade", "http://www.marciotrindade.net", array("target" => "_blank")) ?></div>
+<div id="footer">Created by <?php echo $html->link(Configure::read('Project.name'), Configure::read('Project.url'), array("target" => "_blank")) ?></div>
 
 </body>
 </html>

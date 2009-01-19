@@ -1,8 +1,9 @@
 <?php
 
 // This file is used to add project constants or other stuff used in global scope of project.
-Configure::write('Project.name', 'Base');
+Configure::write('Project.name', 'Website');
 Configure::write('Project.alias', 'base');
+Configure::write('Project.url', 'http://website.com');
 Configure::write('Project.mail', 'noreply@base.com');
 
 // SMTP configuration
