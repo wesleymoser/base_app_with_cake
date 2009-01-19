@@ -14,6 +14,9 @@ class PagesController extends AppController {
 	}
 
 	function show($id = null) {
+		
+		$this->set('pages', $this->Page->find('all'));
+		
 		if (!$id) {
 			$this->redirect(array('action'=>'home'));
 		}
